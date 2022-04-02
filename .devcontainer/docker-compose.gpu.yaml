@@ -1,0 +1,9 @@
+version: "3"
+services:
+  shell:
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [ gpu ]

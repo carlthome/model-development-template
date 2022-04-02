@@ -1,0 +1,7 @@
+version: "3"
+services:
+  shell:
+    volumes:
+      - $HOME/.ssh:/home/developer/.ssh
+      - $HOME/.cache/pip:/home/developer/.cache/pip
+      - $HOME/.config/gcloud:/home/developer/.config/gcloud

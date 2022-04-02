@@ -1,23 +1,20 @@
 {
-	"build": {
-		"dockerfile": "Dockerfile",
-		"context": ".",
-		"args": {
-			"TAG": "11.5.1-cudnn8-runtime-ubuntu20.04",
-			"USER": "developer",
-		}
-	},
-	"runArgs": [
-		"--gpus=all",
+	"dockerComposeFile": [
+		"docker-compose.yaml",
+		"docker-compose.gpu.yaml",
+		"docker-compose.host.yaml",
 	],
-	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.cache/pip,target=/home/developer/.cache/pip,type=bind",
-	],
+	"service": "shell",
+	"workspaceFolder": "/workspace",
 	"settings": {
-		"python.defaultInterpreterPath": ".venv/bin/python",
+		"python.defaultInterpreterPath": "python",
+		"python.languageServer": "Pylance",
 		"python.linting.enabled": true,
-		"python.formatting.blackPath": ".venv/bin/black",
+		"python.linting.flake8Path": "flake8",
 		"python.formatting.provider": "black",
+		"python.formatting.blackPath": "black",
+		"python.testing.pytestEnabled": true,
+		"python.testing.pytestPath": "pytest"
 	},
 	"extensions": [
 		"ms-python.python",
@@ -25,7 +22,4 @@
 	],
 	"postCreateCommand": "make install",
 	"remoteUser": "developer",
-	"features": {
-		"github-cli": "latest"
-	},
 }

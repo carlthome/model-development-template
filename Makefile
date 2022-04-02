@@ -1,3 +1,7 @@
+include .devcontainer/Makefile
+
+shell: docker-shell
+
 install:
 	pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
 	pip install --editable lib/
