@@ -1,10 +1,12 @@
 install:
-	python -m venv .venv
-	.venv/bin/pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
-	.venv/bin/pip install --editable lib/
+	pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu113
+	pip install --editable lib/
+
+run:
+	jupyter execute notebooks/main.ipynb
 
 clean:
-	rm -r .venv
+	git clean -xd --interactive
 
 freeze:
 	pip freeze --exclude-editable -r requirements.txt > requirements.txt

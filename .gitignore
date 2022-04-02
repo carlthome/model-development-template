@@ -1,9 +1,9 @@
+.direnv
 __pycache__
 .ipynb_checkpoints
 .pytest_cache
 *.egg-info
 .coverage
 
-.venv
 /data
 /models
