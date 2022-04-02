@@ -1,0 +1,31 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".",
+		"args": {
+			"TAG": "11.5.1-cudnn8-runtime-ubuntu20.04",
+			"USER": "developer",
+		}
+	},
+	"runArgs": [
+		"--gpus=all",
+	],
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.cache/pip,target=/home/developer/.cache/pip,type=bind",
+	],
+	"settings": {
+		"python.defaultInterpreterPath": ".venv/bin/python",
+		"python.linting.enabled": true,
+		"python.formatting.blackPath": ".venv/bin/black",
+		"python.formatting.provider": "black",
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+	],
+	"postCreateCommand": "make install",
+	"remoteUser": "developer",
+	"features": {
+		"github-cli": "latest"
+	},
+}
