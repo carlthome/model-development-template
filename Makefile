@@ -16,7 +16,7 @@ freeze:
 	pip freeze --exclude-editable -r requirements.txt > requirements.txt
 
 lint:
-	flake8 --extend-exclude=.venv
+	flake8 --extend-exclude=.direnv
 	mypy --ignore-missing-imports .
 	isort --check --diff --profile=black .
 	docformatter -r --check .
