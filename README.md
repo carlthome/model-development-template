@@ -23,3 +23,7 @@ Install the [Remote Containers](https://marketplace.visualstudio.com/items?itemN
 1. Start a Jupyter Notebook server with `jupyter notebook` and browse to https://localhost:8888
 
 Tip: It's also possible to execute notebooks on the command line with `jupyter execute` (as an alternative to "Restart and Run All") or `ipython -i my_notebook.ipynb` to halt on errors and drop into an IPython session for interactive debugging.
+
+# FAQ
+## docker compose build
+If you get `docker: 'compose' is not a docker command.` when trying `make shell` or any of the Docker targets, make sure you've migrated to [Compose V2](https://docs.docker.com/compose/cli-command/#installing-compose-v2) and try again.
