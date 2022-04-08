@@ -20,6 +20,5 @@
 		"ms-python.python",
 		"ms-python.vscode-pylance",
 	],
-	"postCreateCommand": "make install",
 	"remoteUser": "developer",
 }
