@@ -128,7 +128,7 @@ tf-estimator-nightly==2.8.0.dev2021122109
 threadpoolctl==3.1.0
 tokenize-rt==4.2.1
 tomli==2.0.1
-torch==1.11.0+cu113
+torch==1.13.1
 torchaudio==0.11.0+cu113
 torchvision==0.12.0+cu113
 tornado==6.1
