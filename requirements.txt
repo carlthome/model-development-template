@@ -110,7 +110,7 @@ resampy==0.2.2
 rise==5.7.1
 rsa==4.8
 scikit-learn==1.0.2
-scipy==1.8.0
+scipy==1.10.0
 Send2Trash==1.8.0
 six==1.16.0
 SoundFile==0.10.3.post1
