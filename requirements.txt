@@ -95,7 +95,7 @@ pyasn1-modules==0.2.8
 pycodestyle==2.8.0
 pycparser==2.21
 pyflakes==2.4.0
-Pygments==2.11.2
+Pygments==2.15.0
 pynndescent==0.5.6
 pyparsing==3.0.7
 pyrsistent==0.18.1
