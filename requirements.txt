@@ -84,7 +84,7 @@ platformdirs==2.5.1
 pluggy==1.0.0
 pooch==1.6.0
 prometheus-client==0.13.1
-prompt-toolkit==3.0.28
+prompt-toolkit==3.0.30
 protobuf==3.19.5
 psutil==5.9.0
 ptyprocess==0.7.0
