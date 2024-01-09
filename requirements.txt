@@ -27,7 +27,7 @@ executing==0.8.3
 flake8==4.0.1
 flake8-bugbear==22.3.23
 flatbuffers==2.0
-fonttools==4.31.2
+fonttools==4.43.0
 gast==0.5.3
 google-auth==2.6.2
 google-auth-oauthlib==0.4.6
